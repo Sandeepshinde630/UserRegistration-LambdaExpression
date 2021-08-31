@@ -11,8 +11,9 @@ namespace UserRegistration_LambdaExpression
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To User Registration Using Lambda Expression !");
+            
             Console.WriteLine("User ");
-            Console.WriteLine("-------------------------");
+           
             Console.WriteLine("Choose what to Enter:");
             Console.WriteLine("-------------------------");
             Console.WriteLine("1. First Name.\n2. Last Name.\n3. Phone Number.\n4. Email Id.\n5. Password.\n6. Exit");

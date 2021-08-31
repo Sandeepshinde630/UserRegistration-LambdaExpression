@@ -13,7 +13,8 @@ namespace UserRegistration_LambdaExpression
         public const string EMAIL_REGEX = "^[a-z0-9A-Z]+([.][a-zA-Z0-9]+)?[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,2})?$";
         public const string PASSWORD_REGEX = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+]).{8,}$";
 
-        //Func<string, string, bool> Test = (x, y) => x > y; ~~LAMBDA EXP
+        
+        //Func<string, string, bool> Test = (x, y) => x > y; LAMBDA EXPRESSION
         public Func<string, string, bool> ValidateName = (name, FIRSTNAME_REGEX) => Regex.IsMatch(name, FIRSTNAME_REGEX);
         public Func<string, string, bool> ValidateLastName = (lastname, LASTNAME_REGEX) => Regex.IsMatch(lastname, LASTNAME_REGEX);
         public Func<string, string, bool> ValidatePhoneNum = (phonenum, PHONENUM_REGEX) => Regex.IsMatch(phonenum, PHONENUM_REGEX);
